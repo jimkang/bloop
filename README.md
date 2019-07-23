@@ -13,6 +13,8 @@ When I start a new project, I:
 
 This is an automated version of that. I find copying old projects much more practical than trying to anticipate what I'll need in the future with [templates](https://github.com/jimkang/node-module-boilerplate/).
 
+## Assumptions
+
 It works on several assumptions:
 
 - It's running in a directory that contains the base project, and that the new project should be under that same directory. e.g. It's in `~/code/` and `~/code/oldproject` exists, and you want `~/code/newproject` to be created.
@@ -23,7 +25,7 @@ It works on several assumptions:
 Usage
 ----
 
-Copy [bloop.sh](bloop.sh) to the directory that houses your project and make it executable. If you're on OS X, look for the line in the script that says it should be uncommented (and comment out the line it says should be commented out). If you're on Linux, it should just work. I have not tried this on Cygwin.
+Copy [bloop.sh](bloop.sh) to the directory that houses your projects and make it executable. If you're on OS X, look for the line in the script that says it should be uncommented (and comment out the line it says should be commented out). If you're on Linux, it should just work. I have not tried this on Cygwin.
 
 Then, just run `./bloop.sh` and answer the prompts.
 
