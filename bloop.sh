@@ -28,7 +28,7 @@ rm -rf .git
 rm -rf node_modules
 rm -f package-lock.json
 
-find . -type f \( -name '*.html' -o -name '*.js' -o -name '*.md' -o -name '*.json' -o -name 'Makefile' -o -name '*.mk' \) | xargs sed -i "s/$template/$name/g"
+find . -type f \( -name '*.html' -o -name '*.js' -o -name '*.md' -o -name '*.json' -o -name 'Makefile' -o -name '*.mk' -o -name '*.cpp' -o -name '*.h' -o -name '*.ninja' -o -name '*.cmake' -o -name '*.jucer' -o -name '*.txt' \) | xargs sed -i "s/$template/$name/g"
 
 git init
 
@@ -37,4 +37,3 @@ git init
 # find . -type f \( -name '*.html' -o -name '*.js' -o -name '*.md' -o -name '*.json' -o -name 'Makefile' \) | xargs sed -i '' "s/$templatename/$name/g"
 
 echo "OK! Here's your new project, $name."
-
